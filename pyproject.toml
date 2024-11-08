@@ -3,8 +3,9 @@ name = "conf-parser"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 dependencies = [
+    "beautifulsoup4>=4.12.3",
     "openai>=1.54.3",
     "requests>=2.32.3",
     "ruff>=0.7.3",
