@@ -126,17 +126,17 @@ def ask_chat_gpt(keywords: str, publications: str):
 
     prompt = f"""Your role is to find scientific publications linked to given keywords. You will only search in the given publication list with the given keyword list.
     
-    Keywords :
+    Keywords:
     {keywords}
 
-    Scientific publications :
+    Scientific publications:
     {publications}"""
 
     chat_completion = client.chat.completions.create(
         messages=[
             {
                 "role": "system",
-                "content": f"""You are a helpful assistant designed to output JSON that follows the following json schema:\n{JSON_SCHEMA}"""
+                "content": f"You are a helpful assistant designed to output JSON that follows the following json schema:\n{JSON_SCHEMA}"
             },
             {
 
